@@ -2,6 +2,8 @@
 
 // put in the code for the constructors
 
+Rectangle::Rectangle(Point p): topLeft(p.get_xCoord(), p.get_yCoord()) {};
+Rectangle::Rectangle(Point p, double w, double h): topLeft(p.get_xCoord(), p.get_yCoord()), width(w), height(h) {}
 void Rectangle::set_width(double w) { width = w; }
 void Rectangle::set_height(double h) { height = h; }
 double Rectangle::get_width() { return width; }

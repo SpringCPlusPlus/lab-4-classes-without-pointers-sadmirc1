@@ -20,5 +20,8 @@ class Point {
 
     //Member function to print the point.
     void print() const;
+
+    double get_xCoord() {return x;}
+    double get_yCoord() {return y;}
 };
 #endif
